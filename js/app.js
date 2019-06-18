@@ -16,7 +16,7 @@ var height = svgHeight - margin.top - margin.bottom;
 // Create an SVG wrapper, append an SVG group that will hold our chart,
 // and shift the latter by left and top margins.
 var svg = d3
-    .select(".scatter")
+    .select("#scatter")
     .append("svg")
     .attr("width", svgWidth)
     .attr("height", svgHeight);
@@ -28,7 +28,7 @@ var chartGroup = svg.append("g")
 // load data from data.csv
 d3.csv("/data.csv")
     .then(function (error, stateData) {
-        if (error) return console.warn(error);
+        if (error) throw error;
 
         console.log(stateData);
 
