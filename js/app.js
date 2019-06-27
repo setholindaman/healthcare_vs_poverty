@@ -86,6 +86,10 @@ function makeResponsive() {
             .attr("fill", "lightblue")
             .attr("opacity", ".5");
 
+        chartGroup
+            .append('g')
+            .text(d => `${d.stateData.abbr}\n${format(d.value)}`);
+
         // Step 6: Initialize tool tip
         // ==============================
         var toolTip = d3
@@ -109,7 +113,6 @@ function makeResponsive() {
             .on("mouseout", function (data, index) {
                 toolTip.hide(data);
             });
-        return circlesGroup;
 
 
         // Event listeners with transitions
