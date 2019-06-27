@@ -1,15 +1,10 @@
-# Income Vs. Poverty by State
-
-![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
+# Healthcare Vs. Poverty by State
 
 ## Background
 
-### Level 1: D3 Dabbler
+Using D3 techniques, create a scatter plot that represents each state with circle elements.
+Create a scatter plot between `Healthcare vs. Poverty`
 
 ![4-scatter](Images/4-scatter.jpg)
 
-Create a scatter plot between `Income vs. Poverty`.
 
-Using D3 techniques, create a scatter plot that represents each state with circle elements.
-
- - -
